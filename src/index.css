@@ -42,22 +42,7 @@
   .destination-card {
     @apply relative overflow-hidden rounded-2xl shadow-travel hover:shadow-xl transition-all duration-300 transform hover:scale-105;
   }
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
   
-  .scrollbar-hide {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-  }
-  
-  .scrollbar-hide::-webkit-scrollbar {
-    display: none;
-  }
-}
   .review-card {
     @apply bg-white rounded-2xl shadow-travel border border-surface-100 hover:shadow-xl hover:border-primary/20 transition-all duration-300;
   }
@@ -71,7 +56,7 @@
   }
   
   .photo-preview {
-    @apply relative group overflow-hidden rounded-lg;
+    @apply relative overflow-hidden rounded-lg;
   }
   
   .photo-preview:hover .photo-overlay {
@@ -81,6 +66,8 @@
   .photo-overlay {
     @apply absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 transition-opacity duration-200;
   }
+}
+
 
 
 
