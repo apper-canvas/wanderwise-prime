@@ -1,9 +1,9 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import MainFeature from '../components/MainFeature'
 import ApperIcon from '../components/ApperIcon'
 
-import Weather from './Weather'
 
 const Home = () => {
   const [darkMode, setDarkMode] = useState(false)
@@ -48,13 +48,6 @@ const Home = () => {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5 }}
             >
-          <Link
-            to="/weather"
-            className="nav-link flex items-center space-x-1"
-          >
-            <ApperIcon name="CloudSun" className="w-5 h-5" />
-            <span>Weather</span>
-          </Link>
 
               <div className="w-8 h-8 bg-gradient-to-br from-primary to-secondary rounded-lg flex items-center justify-center">
                 <ApperIcon name="Compass" className="w-5 h-5 text-white" />
@@ -62,6 +55,11 @@ const Home = () => {
               <span className="text-xl font-bold text-gray-800">WanderWise</span>
             </motion.div>
             
+              <Link to="/weather" className="nav-link flex items-center space-x-1">
+                <ApperIcon name="CloudSun" className="w-5 h-5" />
+                <span>Weather</span>
+              </Link>
+
             <div className="hidden md:flex items-center space-x-8">
               <a href="#" className="nav-link">Destinations</a>
               <a href="#" className="nav-link">My Trips</a>
