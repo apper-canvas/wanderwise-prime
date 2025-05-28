@@ -55,6 +55,8 @@ const Home = () => {
             <div className="hidden md:flex items-center space-x-8">
               <a href="#" className="nav-link">Destinations</a>
               <a href="#" className="nav-link">My Trips</a>
+              <a href="/documents" className="nav-link">Documents</a>
+
               <a href="/reviews" className="nav-link">Reviews</a>
 
               <button 
@@ -141,6 +143,8 @@ const Home = () => {
               <ul className="space-y-2 text-surface-400">
                 <li><a href="#" className="hover:text-white transition-colors">Destinations</a></li>
                 <li><a href="#" className="hover:text-white transition-colors">My Trips</a></li>
+                <li><a href="/documents" className="hover:text-white transition-colors">Documents</a></li>
+
                 <li><a href="/reviews" className="hover:text-white transition-colors">Reviews</a></li>
 
               </ul>

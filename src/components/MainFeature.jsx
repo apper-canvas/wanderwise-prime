@@ -4,6 +4,8 @@ import ApperIcon from './ApperIcon'
 import SearchTab from './SearchTab'
 import BudgetTab from './BudgetTab'
 import ItineraryTab from './ItineraryTab'
+import DocumentsTab from './DocumentsTab'
+
 import ReviewsTab from './ReviewsTab'
 
 const MainFeature = () => {
@@ -13,8 +15,10 @@ const MainFeature = () => {
     { id: 'search', label: 'Search & Book', icon: 'Search' },
     { id: 'budget', label: 'Budget Tracker', icon: 'PiggyBank' },
     { id: 'itinerary', label: 'Itinerary', icon: 'Calendar' },
+    { id: 'documents', label: 'Documents', icon: 'FileText' },
     { id: 'reviews', label: 'Reviews', icon: 'MessageSquare' }
   ]
+
 
   return (
     <section className="py-16 px-4 sm:px-6 lg:px-8">
@@ -64,6 +68,8 @@ const MainFeature = () => {
             {activeTab === 'search' && <SearchTab />}
             {activeTab === 'budget' && <BudgetTab />}
             {activeTab === 'itinerary' && <ItineraryTab />}
+            {activeTab === 'documents' && <DocumentsTab />}
+
             {activeTab === 'reviews' && <ReviewsTab />}
           </motion.div>
         </AnimatePresence>

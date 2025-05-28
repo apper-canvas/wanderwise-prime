@@ -2,6 +2,8 @@ import { Routes, Route } from 'react-router-dom'
 import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 import Home from './pages/Home'
+import Documents from './pages/Documents'
+
 import Reviews from './pages/Reviews'
 
 import NotFound from './pages/NotFound'
@@ -12,6 +14,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/reviews" element={<Reviews />} />
+        <Route path="/documents" element={<Documents />} />
+
 
         <Route path="*" element={<NotFound />} />
       </Routes>
