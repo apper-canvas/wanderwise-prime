@@ -58,6 +58,31 @@
     display: none;
   }
 }
+  .review-card {
+    @apply bg-white rounded-2xl shadow-travel border border-surface-100 hover:shadow-xl hover:border-primary/20 transition-all duration-300;
+  }
+  
+  .rating-stars {
+    @apply flex items-center space-x-1;
+  }
+  
+  .photo-upload-area {
+    @apply border-2 border-dashed border-surface-300 rounded-xl p-6 text-center hover:border-primary hover:bg-primary/5 transition-all duration-200 cursor-pointer;
+  }
+  
+  .photo-preview {
+    @apply relative group overflow-hidden rounded-lg;
+  }
+  
+  .photo-preview:hover .photo-overlay {
+    @apply opacity-100;
+  }
+  
+  .photo-overlay {
+    @apply absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 transition-opacity duration-200;
+  }
+
+
 
 /* Custom animations */
 @keyframes float {

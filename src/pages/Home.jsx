@@ -55,7 +55,8 @@ const Home = () => {
             <div className="hidden md:flex items-center space-x-8">
               <a href="#" className="nav-link">Destinations</a>
               <a href="#" className="nav-link">My Trips</a>
-              <a href="#" className="nav-link">Reviews</a>
+              <a href="/reviews" className="nav-link">Reviews</a>
+
               <button 
                 onClick={toggleDarkMode}
                 className="p-2 rounded-lg hover:bg-surface-100 transition-colors"
@@ -140,7 +141,8 @@ const Home = () => {
               <ul className="space-y-2 text-surface-400">
                 <li><a href="#" className="hover:text-white transition-colors">Destinations</a></li>
                 <li><a href="#" className="hover:text-white transition-colors">My Trips</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Reviews</a></li>
+                <li><a href="/reviews" className="hover:text-white transition-colors">Reviews</a></li>
+
               </ul>
             </div>
             <div>
