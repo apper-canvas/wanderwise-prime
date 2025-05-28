@@ -49,6 +49,10 @@ export default {
       },
       backgroundImage: {
         'travel-gradient': 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+        'weather-gradient': 'linear-gradient(135deg, #74b9ff 0%, #0984e3 100%)',
+        'weather-card': 'linear-gradient(145deg, #ffffff 0%, #f8fafc 100%)',
+
+
         'destination-overlay': 'linear-gradient(0deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0) 100%)'
       }
     }

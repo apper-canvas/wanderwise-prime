@@ -5,6 +5,8 @@ import SearchTab from './SearchTab'
 import BudgetTab from './BudgetTab'
 import ItineraryTab from './ItineraryTab'
 import DocumentsTab from './DocumentsTab'
+import WeatherTab from './WeatherTab'
+
 
 import ReviewsTab from './ReviewsTab'
 
@@ -13,11 +15,13 @@ const MainFeature = () => {
 
   const tabs = [
     { id: 'search', label: 'Search & Book', icon: 'Search' },
+    { id: 'weather', label: 'Weather', icon: 'CloudSun' },
     { id: 'budget', label: 'Budget Tracker', icon: 'PiggyBank' },
     { id: 'itinerary', label: 'Itinerary', icon: 'Calendar' },
     { id: 'documents', label: 'Documents', icon: 'FileText' },
     { id: 'reviews', label: 'Reviews', icon: 'MessageSquare' }
   ]
+
 
 
   return (
@@ -67,6 +71,8 @@ const MainFeature = () => {
           >
             {activeTab === 'search' && <SearchTab />}
             {activeTab === 'budget' && <BudgetTab />}
+            {activeTab === 'weather' && <WeatherTab />}
+
             {activeTab === 'itinerary' && <ItineraryTab />}
             {activeTab === 'documents' && <DocumentsTab />}
 

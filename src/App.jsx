@@ -3,6 +3,8 @@ import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 import Home from './pages/Home'
 import Documents from './pages/Documents'
+import Weather from './pages/Weather'
+
 
 import Reviews from './pages/Reviews'
 
@@ -15,6 +17,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/reviews" element={<Reviews />} />
         <Route path="/documents" element={<Documents />} />
+        <Route path="/weather" element={<Weather />} />
+
 
 
         <Route path="*" element={<NotFound />} />
